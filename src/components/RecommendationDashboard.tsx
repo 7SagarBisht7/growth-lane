@@ -143,7 +143,7 @@ export function RecommendationDashboard({ userProfile, onBack }: RecommendationD
         return { ...internship, matchScore: adjustedScore };
       })
       .sort((a, b) => b.matchScore - a.matchScore)
-      .slice(0, 4); // Top 4 recommendations
+      .slice(0, 5); // Top 5 recommendations max
   };
 
   useEffect(() => {
